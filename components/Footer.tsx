@@ -1,5 +1,5 @@
 // components/Footer.js
-
+'use client'
 import { useActiveSectionContext } from '@/context/ActiveSectionProvider'
 import { links, personalDetails, socialMedia } from '@/lib/data'
 import { motion } from 'framer-motion'

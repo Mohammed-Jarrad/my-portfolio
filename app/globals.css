@@ -1,27 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Rubik:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+    scroll-behavior: smooth !important;
+    --line-color: #eae8e8e3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html.dark {
+    --line-color: rgb(255, 255, 255, 0.05)
+}
+ 
+.flex-center {
+    @apply flex justify-center items-center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.gradient-violet {
+    @apply bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent
+}
+.gradient-orange {
+    @apply bg-gradient-to-r from-orange-200  to-orange-400 bg-clip-text text-transparent
+}
+.gradient-black {
+    @apply bg-gradient-to-r from-slate-800 via-slate-500 to-slate-500 bg-clip-text text-transparent
+}
+
+.info_button {
+    @apply bg-white/60 py-1 px-3 flex-center gap-2 shadow-sm rounded-xl font-rubik focus:scale-105 hover:scale-105 outline-none transition hover:bg-white cursor-pointer text-lg border border-black/10 dark:bg-white/60 dark:text-gray-950;
+}
+
+.info_button_inverse {
+    @apply info_button !bg-gray-900 text-white hover:!bg-gray-950 dark:text-gray-50;
+}
+
+.project_button {
+    @apply focus:scale-105 hover:scale-105 outline-none transition cursor-pointer text-[14px] 
+            rounded-lg py-[1px] px-[10px] border font-rubik flex items-center gap-2
+    ;
+    > i, svg {
+        font-size: 14px !important;
+    }
+}
+
+.shadow-img {
+    @apply shadow;
+    --tw-shadow: 4px 7px 30px -4px var(--main-color) !important
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #444;
+    @apply bg-gradient-to-b from-violet-400 via-violet-500 to-violet-400
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-violet-500 via-violet-500 to-violet-500
+}
+
+::selection {
+    @apply bg-violet-300 text-gray-950
 }

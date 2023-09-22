@@ -38,7 +38,7 @@ const About = () => {
 				initial="hidden"
 				animate={inView ? 'visible' : 'hidden'}
 				transition={{ delay: 0.2 }}
-				className="mb-3"
+				className="mb-3 text-left"
 			>
 				{firstP}
 			</motion.p>
@@ -51,6 +51,7 @@ const About = () => {
 				initial="hidden"
 				animate={inView ? 'visible' : 'hidden'}
 				transition={{ delay: 0.4 }}
+				className="text-left"
 			>
 				{secondP}
 			</motion.p>

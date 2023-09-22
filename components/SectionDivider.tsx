@@ -22,24 +22,6 @@ const SectionDivider = ({ sectionName }: { sectionName: string }) => {
 	}
 	return (
 		<motion.div ref={ref} className="my-24 w-full">
-			<div>
-				<motion.span
-					variants={nameVarients}
-					initial="hidden"
-					animate={inView ? 'visible' : 'hidden'}
-					className="text-lg font-itim"
-				>
-					{sectionName}
-				</motion.span>
-				<motion.span
-					variants={emojiVarients}
-					initial="hidden"
-					animate={inView ? 'visible' : 'hidden'}
-					className="text-lg font-itim"
-				>
-					👋
-				</motion.span>
-			</div>
 			<motion.div
 				initial={'hidden'}
 				animate={inView ? 'visible' : 'hidden'}

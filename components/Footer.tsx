@@ -10,7 +10,7 @@ const Footer = () => {
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
 	return (
-		<footer className="bg-gray-800 text-white p-10 mt-28 dark:bg-gray-900 dark:border-t dark:border-gray-700">
+		<footer className="bg-gray-800 p-10 mt-28 dark:bg-gray-900 dark:border-t dark:border-gray-700">
 			<div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
 				{/* My Infos Section */}
 				<motion.div
@@ -20,18 +20,18 @@ const Footer = () => {
 					className="text-center"
 				>
 					<h1 className="text-2xl font-bold mb-6 font-rubik gradient-orange">My Informations</h1>
-					<div className="flex items-center mb-2 justify-center">
-						<FaMapMarkerAlt className="mr-2" />
-						<p className="text-gray-500 font-delius">{personalDetails.location}</p>
+					<div className="flex items-center mb-2 justify-center text-[#9398A2]">
+						<FaMapMarkerAlt className="mr-2 " />
+						<p className="font-delius">{personalDetails.location}</p>
 					</div>
-					<div className="flex items-center mb-2 justify-center">
+					<div className="flex items-center mb-2 justify-center text-[#9398A2]">
 						<FaPhoneAlt className="mr-2" />
-						<p className="text-gray-500 font-delius">{personalDetails.phoneNumber}</p>
+						<p className=" font-delius">{personalDetails.phoneNumber}</p>
 					</div>
-					<div className="flex items-center mb-2 justify-center">
-						<FaEnvelope className="mr-2" />
+					<div className="flex items-center mb-2 justify-center text-[#9398A2]">
+						<FaEnvelope className="mr-2 " />
 						<a
-							className="text-gray-500 font-delius hover:text-gray-400 transition-all"
+							className=" font-delius hover:text-[#B6BBC6] transition-all"
 							href={`mailto:${personalDetails.email}`}
 						>
 							{personalDetails.email}
@@ -47,7 +47,7 @@ const Footer = () => {
 					transition={{ duration: 0.5, delay: 0.1 }}
 				>
 					<h1 className="text-2xl font-bold mb-6 font-rubik gradient-orange">About</h1>
-					<p className="text-gray-500">
+					<p className="text-[#9398A2]">
 						built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer
 						Motion, React Email & Resend, Vercel hosting.
 					</p>
@@ -65,7 +65,7 @@ const Footer = () => {
 							<li key={link.name}>
 								<Link
 									href={link.hash}
-									className={`hover:text-gray-400 transition-all text-gray-500 font-delius`}
+									className={`hover:text-[#B6BBC6] transition-all text-[#9398A2] font-delius`}
 									onClick={() => {
 										setActiveSection(link.name)
 										setTimeOfLastClick(Date.now())
@@ -91,7 +91,7 @@ const Footer = () => {
 								<Link
 									target="_blank"
 									href={link.href}
-									className="w-fit mx-auto flex items-center gap-2 text-gray-500 hover:text-gray-400 transition-all duration-200 font-delius justify-center"
+									className="w-fit mx-auto flex items-center gap-2 text-[#9398A2] hover:text-[#B6BBC6] transition-all duration-200 font-delius justify-center"
 								>
 									<link.icon className="text-xl" />
 									<p>{link.name}</p>
@@ -109,7 +109,7 @@ const Footer = () => {
 				transition={{ duration: 0.5, delay: 0.4 }}
 			>
 				<h1 className="text-2xl font-bold font-itim gradient-violet">Mohammed Jarrad</h1>
-				<p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+				<p className="text-[#9398A2]">&copy; {new Date().getFullYear()} All rights reserved.</p>
 			</motion.div>
 		</footer>
 	)

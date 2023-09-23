@@ -39,7 +39,7 @@ html.dark {
 
 .project_button {
     @apply focus:scale-105 hover:scale-105 outline-none transition cursor-pointer text-[14px] 
-            rounded-lg py-[1px] px-[10px] border font-rubik flex items-center gap-2
+            rounded-lg py-2 px-5 border font-rubik flex items-center gap-2
     ;
     > i, svg {
         font-size: 14px !important;

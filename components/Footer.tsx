@@ -108,7 +108,13 @@ const Footer = () => {
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0.4 }}
 			>
-				<h1 className="text-2xl font-bold font-itim gradient-violet">Mohammed Jarrad</h1>
+				<h1
+					className="text-2xl font-bold font-itim 
+						bg-gradient-to-r bg-clip-text text-transparent from-sky-400 via-teal-300 to-sky-500 uppercase
+					"
+				>
+					Mohammed Jarrad
+				</h1>
 				<p className="text-[#9398A2]">&copy; {new Date().getFullYear()} All rights reserved.</p>
 			</motion.div>
 		</footer>

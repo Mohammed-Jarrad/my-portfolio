@@ -57,7 +57,7 @@ const Header = () => {
 									dark:hover:text-gray-300 
                                 `,
 									{
-										'text-gray-950 relative dark:text-gray-300': link.name == activeSection,
+										'!text-gray-50 relative dark:text-gray-300': link.name == activeSection,
 									},
 								)}
 								onClick={() => {
@@ -74,7 +74,7 @@ const Header = () => {
 											stiffness: 200,
 											damping: 30,
 										}}
-										className="absolute inset-0 bg-[#7c3aed54] z-[-1] rounded-full "
+										className="absolute inset-0 z-[-1] rounded-full bg-gradient-to-r from-violet-500 to-violet-700 dark:from-violet-600 dark:to-violet-800"
 									/>
 								)}
 							</Link>

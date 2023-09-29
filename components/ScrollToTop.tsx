@@ -18,11 +18,7 @@ const ScrollToTop = () => {
 		}
 	})
 
-	useMotionValueEvent(scrollYProgress, 'change', latest => {
-		if (latest >= 0.97) {
-			setShow(false)
-		} 
- 	})
+	 
 
 	const handleClick = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
@@ -33,7 +29,7 @@ const ScrollToTop = () => {
 	return (
 		<motion.div
 			className={clsx(
-				`fixed right-3 sm:right-5 bottom-16 sm:bottom-20 bg-violet-500 w-10 h-10 flex-center rounded-full cursor-pointer z-[200] bg-opacity-60 backdrop-blur-sm`,
+				`fixed right-3 sm:right-5 bottom-16 sm:bottom-20  w-10 h-10 flex-center rounded-full cursor-pointer z-[200] bg-opacity-70 backdrop-blur-sm  bg-gradient-to-tr from-purple-400 via-purple-500 to-purple-900  `,
 				{
 					'!hidden': !show,
 				},

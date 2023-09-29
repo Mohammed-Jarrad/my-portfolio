@@ -1,12 +1,12 @@
-import { experimental_useFormStatus } from "react-dom"
-import { FaPaperPlane } from "react-icons/fa"
+import { experimental_useFormStatus } from 'react-dom'
+import { FaPaperPlane } from 'react-icons/fa'
 
 const SubmitButton = () => {
 	const { pending } = experimental_useFormStatus()
 
 	return (
 		<button
-			className="flex items-center gap-2 bg-gray-700 text-white py-2 px-4 font-delius rounded-full w-fit group hover:bg-gray-900 active:scale-105 hover:ring-4 hover:ring-violet-300 transition-all duration-300 disabled:scale-100 disabled:bg-gray-600 dark:bg-violet-800 dark:hover:ring-0 dark:hover:scale-105"
+			className="flex items-center gap-2   text-white py-2 px-4 font-delius rounded-full w-fit group hover:bg-gray-900 active:scale-105 hover:ring-4 hover:ring-violet-300 transition-all duration-300 disabled:scale-100 disabled:bg-gray-600   dark:hover:ring-0 dark:hover:scale-105 bg-gradient-to-r from-violet-600 to-violet-800"
 			type="submit"
 			disabled={pending}
 		>

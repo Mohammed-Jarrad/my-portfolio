@@ -15,7 +15,7 @@ const Intro = () => {
 	const [indicator, setIndicator] = useState<number>(0)
 	const [indicator2, setIndicator2] = useState<number>(0)
 	const [direction, setDirection] = useState<'forward' | 'backward'>('forward')
-	const infos = ['Mohammed Jarrad', 'Web Developer', 'Software Engineer'] as const
+	const infos = ['Web Developer', 'Frontend Developer', 'Backend Developer'] as const
 	const [infoIndex, setInfoIndex] = useState(0)
 	const name = useRef<string>('')
 	const summary: string =
@@ -89,12 +89,27 @@ const Intro = () => {
 				</motion.span>
 			</div>
 
-			<motion.h1
-				className="text-4xl sm:text-5xl font-bold font-itim text-center mt-5 flex-center text-gray-800 !leading-[60px] max-sm:!leading-[50px] flex items-center"
-				initial={{ y: 100, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
+			<motion.div
+				className="mt-6"
+				initial={{ x: -200, opacity: 0 }}
+				animate={{ x: 0, opacity: 1, transition: { delay: 0.5, duration: 0.3 } }}
 			>
-				<div className="gradient-violet">
+				<span className="block text-lg font-rubik mb-5">Hello I'm</span>
+				<h1
+					className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold
+					gradient-main font-rubik stroke-2 stroke-orange-700
+				"
+				>
+					Mohammed Jarrad
+				</h1>
+			</motion.div>
+
+			<motion.h2 className="flex-center" initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+				<div
+					className="font-medium text-xl sm:text-2xl font-rubik uppercase bg-clip-text text-transparent 
+					bg-gradient-to-r from-gray-600 to-gray-900
+				dark:from-rose-300 dark:to-rose-100"
+				>
 					<AnimatePresence>
 						{name.current
 							.split('')
@@ -112,7 +127,7 @@ const Intro = () => {
 					</AnimatePresence>
 				</div>
 				<motion.span
-					className={`text-transparent bg-clip-text bg-gradient-to-t ${
+					className={`text-transparent bg-clip-text bg-gradient-to-t text-4xl ${
 						direction == 'forward'
 							? 'from-green-500 via-green-600 to-green-500'
 							: 'from-red-400 via-red-500 to-red-400'
@@ -123,7 +138,7 @@ const Intro = () => {
 				>
 					|
 				</motion.span>
-			</motion.h1>
+			</motion.h2>
 
 			<motion.p
 				className="text-gray-500 font-delius text-lg font-extralight mt-5 max-w-xl dark:text-gray-400"

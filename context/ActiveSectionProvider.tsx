@@ -3,9 +3,11 @@ import { links } from '@/lib/data'
 import React from 'react'
 
 export type activeSectionType = (typeof links)[number]['name']
+
 type activeSectionProviderProps = {
 	children: React.ReactNode
 }
+
 type activeSectionContextType = {
 	activeSection: activeSectionType
 	setActiveSection: React.Dispatch<React.SetStateAction<activeSectionType>>

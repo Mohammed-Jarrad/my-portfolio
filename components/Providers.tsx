@@ -5,7 +5,9 @@ import React from 'react'
 const Providers = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<ThemeProvider>
-			<ActiveSectionProvider>{children}</ActiveSectionProvider>
+			<ActiveSectionProvider>
+				{children}
+			</ActiveSectionProvider>
 		</ThemeProvider>
 	)
 }

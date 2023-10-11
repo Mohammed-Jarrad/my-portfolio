@@ -10,8 +10,8 @@ import { LuGraduationCap } from 'react-icons/lu'
 
 export const links = [
 	{
-		name: 'Home',
-		hash: '#home',
+		name: "Home",
+		hash: "#home"
 	},
 	{
 		name: 'About',

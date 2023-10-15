@@ -18,7 +18,7 @@ const Footer = () => {
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.5 }}
 					className="text-center"
-				>
+				> 
 					<h1 className="text-2xl font-bold mb-6 font-rubik gradient-orange">My Informations</h1>
 					<div className="flex items-center mb-2 justify-center text-[#9398A2]">
 						<FaMapMarkerAlt className="mr-2 " />

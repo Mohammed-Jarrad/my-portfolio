@@ -18,13 +18,11 @@ const Intro = () => {
 	const infos = ['Web Developer', 'Frontend Developer', 'Backend Developer'] as const
 	const [infoIndex, setInfoIndex] = useState(0)
 	const name = useRef<string>('')
-	const summary: string =
-		`I'm a Computer System Engineer with a passion for web development, especially within the MERN
+	const summary: string = `I'm a Computer System Engineer with a passion for web development, especially within the MERN
     stack. With a hands-on experience in modern web technologies` as const
 
 	useEffect(() => {
-		const typingSpeed =
-			direction == 'forward' ? Math.floor(Math.random() * 300) : Math.floor(Math.random() * 100)
+		const typingSpeed = direction == 'forward' ? Math.floor(Math.random() * 300) : Math.floor(Math.random() * 100)
 		const switchToDeleteDelay = 2000
 		const switchToTypingDelay = 1000
 		name.current = infos[infoIndex]
@@ -97,7 +95,7 @@ const Intro = () => {
 				<span className="block text-lg font-rubik mb-5">Hello I'm</span>
 				<h1
 					className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold
-					gradient-main font-rubik stroke-2 stroke-orange-700
+					gradient-main font-rubik
 				"
 				>
 					Mohammed Jarrad
@@ -128,9 +126,7 @@ const Intro = () => {
 				</div>
 				<motion.span
 					className={`text-transparent bg-clip-text bg-gradient-to-t text-4xl ${
-						direction == 'forward'
-							? 'from-green-500 via-green-600 to-green-500'
-							: 'from-red-400 via-red-500 to-red-400'
+						direction == 'forward' ? 'from-green-500 via-green-600 to-green-500' : 'from-red-400 via-red-500 to-red-400'
 					} rounded-full select-none`}
 					initial={{ opacity: 1 }}
 					animate={{ opacity: [1, 0.2, 1] }}

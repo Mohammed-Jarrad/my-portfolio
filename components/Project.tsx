@@ -16,6 +16,7 @@ export function Project({
 	image,
 	imgLink,
 	github,
+	githubBackend,
 	mainColor,
 	index,
 }: ProjectProps) {
@@ -46,14 +47,13 @@ export function Project({
 
 	return (
 		<motion.article
-			className="group relative overflow-hidden mb-4 md:mb-8 last:mb-0 border-2 border-black/5 rounded-lg md:min-h-[20rem] md:h-[20rem] bg-gray-100 hover:bg-gray-200 transition max-sm:min-h-[65vh] max-md:flex max-md:flex-col max-md:justify-between dark:bg-[#FFFFFF0D] dark:border-gray-600 dark:border-1 dark:border-opacity-10"
+			className="group relative overflow-hidden mb-4 md:mb-8 last:mb-0 border-2 border-black/5 rounded-lg md:min-h-[20rem]  bg-gray-100 hover:bg-gray-200 transition max-sm:min-h-[65vh] max-md:flex max-md:flex-col max-md:justify-between dark:bg-[#FFFFFF0D] dark:border-gray-600 dark:border-1 dark:border-opacity-10"
 			style={{ scale: newScale, opacity: newOpacity }}
 			ref={articleRef}
 		>
-            
 			<div
 				ref={contentRef}
-				className="p-4 max-w-[50%] flex flex-col h-full max-md:max-w-full group-even:ml-auto max-md:flex-1"
+				className="p-4 max-w-[50%] flex flex-col h-full max-md:max-w-full group-even:ml-auto max-md:flex-1 space-y-6"
 			>
 				<motion.h3
 					variants={headerVarients}
@@ -100,11 +100,16 @@ export function Project({
 						className="project_button text-white border-transparent shadow-lg"
 						style={{ background: mainColor }}
 					>
-						Visit Site <BsGlobe />
+						Visit <BsGlobe />
 					</Link>
 					<Link href={github} target="_blank" className="project_button shadow-lg">
-						Source Code <AiFillGithub className="text-[16px]" />
+						{!githubBackend ? 'Source Code' : 'Frontend'} <AiFillGithub className="text-[16px]" />
 					</Link>
+					{githubBackend && (
+						<Link href={githubBackend} target="_blank" className="project_button shadow-lg">
+							Backend <AiFillGithub className="text-[16px]" />
+						</Link>
+					)}
 				</motion.div>
 			</div>
 
@@ -130,7 +135,6 @@ export function Project({
                     `}
 				/>
 			</motion.div>
-            
 		</motion.article>
 	)
 }

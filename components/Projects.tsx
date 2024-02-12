@@ -28,7 +28,7 @@ const Projects = () => {
 			<div className="overflow-hidden">
 				{projectsData.map((project, i) => (
 					<React.Fragment key={project.title}>
-						<Project {...project} index={i} />
+						<Project {...project} githubBackend={project?.githubBackend ?? undefined} index={i} />
 					</React.Fragment>
 				))}
 			</div>

@@ -89,8 +89,7 @@ const DesktopHeader = () => {
 							`
                         absolute inset-0 -z-[2] rounded-none sm:rounded-full shadow-2xl backdrop-blur-2xl sm:bg-opacity-60 transition-all duration-300
 						bg-white
-						dark:bg-gray-950
-						dark:sm:bg-opacity-75 dark:backdrop-blur-md dark:max-sm:bg-opacity-90
+						dark:bg-gray-950 dark:sm:bg-opacity-75 dark:backdrop-blur-md dark:max-sm:bg-opacity-90
                     `,
 							{
 								'sm:!rounded-none sm:!rounded-bl-full sm:!rounded-br-full ':

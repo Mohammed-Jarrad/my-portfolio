@@ -1,8 +1,8 @@
 import jarradBlogs from '@/public/sites-images/jarrad-blogs.png'
 import jarradDelta from '@/public/sites-images/jarrad-delta.png'
-import jarradEcommerce from '@/public/sites-images/jarrad-ecommerce.png'
+import jarradMarbleNet from '@/public/sites-images/jarrad-marble-net.png'
+import jarradMercyPharm from '@/public/sites-images/jarrad-mercypharm.png'
 import jarradNike from '@/public/sites-images/jarrad-nike.png'
-import jarradPromtopia from '@/public/sites-images/jarrad-promptopia.png'
 import jarradSocialMedia from '@/public/sites-images/jarrad-socialmedia.png'
 import React from 'react'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaReact, FaWhatsapp } from 'react-icons/fa'
@@ -10,8 +10,8 @@ import { LuGraduationCap } from 'react-icons/lu'
 
 export const links = [
 	{
-		name: "Home",
-		hash: "#home"
+		name: 'Home',
+		hash: '#home',
 	},
 	{
 		name: 'About',
@@ -107,14 +107,36 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: 'E-Commerce',
+		title: 'Mercy Pharm',
 		description:
-			'Built a MERN e-commerce platform with SASS & dark mode & Swiper-js, offering user verification, product categorization, and filtering. Features an admin dashboard for streamlined order and product management.',
-		image: jarradEcommerce,
-		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'SASS', 'ContextAPI'],
-		imgLink: 'https://momenstore.com',
-		github: 'https://github.com/Mohammed-Jarrad/react-shopping-cart.git',
-		mainColor: '#00a28b',
+			'Developed a MERN stack website for users seeking care products. Used Node.js, Express.js, and MongoDB for backend operations. Integrated Joi for validation and Cloudinary for photo uploads. Frontend built with React.js, Vite, Tailwind CSS, Framer Motion, i18next, and Swiper for a dynamic and intuitive user experience.',
+		image: jarradMercyPharm,
+		tags: [
+			'React.js',
+			'Node.js',
+			'Express.js',
+			'MongoDB',
+			'TailwindCSS',
+			'ContextAPI',
+			'Cloudinary',
+			'i18next',
+			'Swiper',
+		],
+		imgLink: 'https://mercypharm.com',
+		github: 'https://github.com/Mohammed-Jarrad/mercypharm-frontend.git',
+		githubBackend: 'https://github.com/Mohammed-Jarrad/mercypharm-backend.git',
+		mainColor: '#3e6541',
+	},
+	{
+		title: 'Marble Net',
+		description:
+			'Crafted a marble sales platform using MERN stack. Frontend: React.js with Vite, Axios, Framer Motion, React Router DOM, SweetAlert2. Backend: Express.js, bcryptjs, JWT, Cloudinary with Multer, MongoDB with Mongoose.',
+		image: jarradMarbleNet,
+		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'TailwindCSS', 'ContextAPI', 'Cloudinary'],
+		imgLink: 'https://marblenet.netlify.app',
+		github: 'https://github.com/Mohammed-Jarrad/marble-net-frontend.git',
+		githubBackend: 'https://github.com/Mohammed-Jarrad/marble-net-backend.git',
+		mainColor: '#308faf',
 	},
 	{
 		title: 'Blogs',
@@ -124,6 +146,7 @@ export const projectsData = [
 		tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'SASS', 'React-Query'],
 		imgLink: 'https://jarrad-blogs.netlify.app',
 		github: 'https://github.com/Mohammed-Jarrad/Blogs-Frontend-V2.git',
+		githubBackend: 'https://github.com/Mohammed-Jarrad/Blogs-Backend.git',
 		mainColor: '#d25d59',
 	},
 	{
@@ -156,33 +179,20 @@ export const projectsData = [
 		github: 'https://github.com/Mohammed-Jarrad/react-delta-frontend.git',
 		mainColor: '#071c2f',
 	},
-	{
-		title: 'Promptopia',
-		description:
-			'Built a "Shared-Prompts" web app using Next.js 13 and Tailwind CSS, integrating Google Sign-In via next-auth. The full-stack platform supports extensive CRUD operations, allowing users to manage prompts and access personalized profiles efficiently.',
-		image: jarradPromtopia,
-		tags: ['Next.js', 'TailwindCSS', 'Next-Auth', 'MongoDB', 'Mongoose'],
-		imgLink: 'https://jarrad-promptopia.vercel.app',
-		github: 'https://github.com/Mohammed-Jarrad/promptopia.git',
-		mainColor: '#ff5722',
-	},
-] as const
+] 
 
 export const skillsData = [
-	'Java',
 	'HTML',
 	'CSS',
+	'TailwindCSS',
+	'SASS',
 	'JavaScript',
 	'TypeScript',
 	'React',
-	'Next.js',
 	'Node.js',
 	'Express.js',
 	'MongoDB',
-	'Redux',
 	'Framer Motion',
-	'Tailwind',
-	'SASS',
 	'Git',
 	'GitHub',
 ] as const

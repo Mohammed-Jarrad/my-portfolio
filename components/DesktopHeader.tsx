@@ -53,7 +53,7 @@ const DesktopHeader = () => {
 							<Link
 								href={link.hash}
 								className={clsx(
-									`hover:text-gray-950 transition-all text-gray-500 text-[.9rem] font-rubik py-2 px-3 rounded-full max-sm:py-1
+									`hover:text-gray-950 transition-all text-gray-500 text-[.9rem] font-comfortaa py-2 px-3 rounded-full max-sm:py-1
 									dark:hover:text-gray-300 
                                 `,
 									{

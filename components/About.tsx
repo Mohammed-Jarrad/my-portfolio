@@ -17,7 +17,7 @@ const About = () => {
 
 	return (
 		<motion.section
-			className="text-center leading-8 scroll-mt-28 font-rubik"
+			className="text-center leading-8 scroll-mt-28 font-comfortaa"
 			variants={{
 				hidden: { opacity: 0, x: -200 },
 				visible: { opacity: 1, x: 0 },

@@ -78,7 +78,7 @@ export const personalDetails = {
 		location: '/Mohammed Jarrad-CV.pdf',
 	},
 	personalImg: {
-		src: '/pimage.png',
+		src: '/pimage1.png',
 		alt: 'Mohammed Jarrad Image',
 	},
 	phoneNumber: '+972 56-855-8874',

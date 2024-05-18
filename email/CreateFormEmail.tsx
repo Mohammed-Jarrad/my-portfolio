@@ -26,7 +26,7 @@ const CreateFormEmail = ({ message, senderEmail }: ContactFormEmailProps) => {
                 <Container>
                     <Section className="py-6 px-4 border border-black/20 rounded-xl bg-white">
                         <Heading className="leading-tight text-gray-800 text-2xl">You received the following message from the contact form</Heading>
-                        <Text className="font-delius tracking-tight py-10">{message}</Text>
+                        <Text className="font-comfortaa tracking-tight py-10">{message}</Text>
                         <Hr />
                         <Text>The sender's email is: {senderEmail}</Text>
                     </Section>

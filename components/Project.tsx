@@ -60,7 +60,7 @@ export function Project({
 					initial={'hidden'}
 					animate={inView ? 'visible' : 'hidden'}
 					transition={{ duration: 0.5 }}
-					className="font-semibold font-delius mb-3 text-lg"
+					className="font-semibold font-comfortaa mb-3 text-lg"
 				>
 					{title}
 				</motion.h3>
@@ -69,7 +69,7 @@ export function Project({
 					initial={'hidden'}
 					animate={inView ? 'visible' : 'hidden'}
 					transition={{ duration: 0.2 }}
-					className="text-gray-700 font-rubik text-sm max-md:mb-4 dark:text-gray-300"
+					className="text-gray-700 font-comfortaa text-sm max-md:mb-4 dark:text-gray-300"
 				>
 					{description}
 				</motion.p>
@@ -77,7 +77,7 @@ export function Project({
 					{[...tags].map((tag, idx) => (
 						<motion.li
 							key={tag}
-							className="bg-black/60 text-white rounded-full py-1 px-3 text-center text-[13px] capitalize font-rubik dark:bg-white/10"
+							className="bg-black/60 text-white rounded-full py-1 px-3 text-center text-[13px] capitalize font-comfortaa dark:bg-white/10"
 							variants={linkItemsVarients}
 							initial={'hidden'}
 							animate={inView ? 'visible' : 'hidden'}

@@ -13,9 +13,8 @@ const config: Config = {
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			fontFamily: {
-				rubik: ['Rubik', 'sans-serif'],
 				itim: ['Itim', 'cursive'],
-				delius: ['Delius', 'cursive']
+				comfortaa: ['Comfortaa', 'sans-serif'],
 			},
 		},
 	},

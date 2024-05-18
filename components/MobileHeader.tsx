@@ -49,7 +49,7 @@ const MobileHeader = () => {
 						<li
 							key={link.hash}
 							className={clsx(
-								`mb-3 py-1 px-3 font-delius relative text-gray-900 w-40 mx-auto text-center dark:text-gray-50`,
+								`mb-3 py-1 px-3 font-comfortaa relative text-gray-900 w-40 mx-auto text-center dark:text-gray-50`,
 								{
 									'!text-gray-50': activeSection == link.name,
 								},

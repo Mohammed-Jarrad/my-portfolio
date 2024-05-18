@@ -45,11 +45,11 @@ const Experience = () => {
 								fontSize: '1.5rem',
 								zIndex: theme === 'dark' ? 100 : 1
 							}}
-							dateClassName="lg:mx-3 font-delius"
+							dateClassName="lg:mx-3 font-comfortaa"
 						>
-							<h3 className="font-semibold capitalize font-delius">{item.title}</h3>
-							<p className="font-normal !mt-0 font-delius !text-[13px]">{item.location}</p>
-							<p className="!mt-2 !font-normal text-gray-700 font-delius dark:text-gray-400 ">{item.description}</p>
+							<h3 className="font-semibold capitalize font-comfortaa">{item.title}</h3>
+							<p className="font-normal !mt-0 font-comfortaa !text-[13px]">{item.location}</p>
+							<p className="!mt-2 !font-normal text-gray-700 font-comfortaa dark:text-gray-400 ">{item.description}</p>
 						</VerticalTimelineElement>
 					</React.Fragment>
 				))}

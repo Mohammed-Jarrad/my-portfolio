@@ -30,7 +30,7 @@ const Skills = () => {
  						transition={{ delay: idx * 0.03 }}
 					>
 						<motion.span
-							className="inline-block bg-white  shadow-2xl text-gray-800 border border-black/10 py-1 px-3 capitalize rounded-lg font-rubik dark:bg-white/10 dark:text-gray-300 "
+							className="inline-block bg-white  shadow-2xl text-gray-800 border border-black/10 py-1 px-3 capitalize rounded-lg font-comfortaa dark:bg-white/10 dark:text-gray-300 "
 							variants={{
 								hidden: { scale: 0 },
 								visible: { scale: [1.03, 0.97] },

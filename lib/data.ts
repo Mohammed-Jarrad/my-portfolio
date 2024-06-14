@@ -1,9 +1,8 @@
-import jarradBlogs from "@/public/sites-images/jarrad-blogs.png";
-import jarradDelta from "@/public/sites-images/jarrad-delta.png";
-import jarradMarbleNet from "@/public/sites-images/jarrad-marble-net.png";
-import jarradMercyPharm from "@/public/sites-images/jarrad-mercypharm.png";
-import jarradNike from "@/public/sites-images/jarrad-nike.png";
-import jarradSocialMedia from "@/public/sites-images/jarrad-socialmedia.png";
+import jarradDelta from "@/public/sites-images/delta.png";
+import jarradMarbleNet from "@/public/sites-images/marblenet.png";
+import jarradMercyPharm from "@/public/sites-images/mercypharm.png";
+import jarradNike from "@/public/sites-images/nikeShowcasing.png";
+import jarradSocialMedia from "@/public/sites-images/socialapp.png";
 import memobookImage from "@/public/sites-images/memobook.png";
 import mernEcommerceImage from "@/public/sites-images/ecommerce.png";
 import React from "react";
@@ -55,11 +54,11 @@ export const socialMedia = [
         href: "https://www.facebook.com/jarrad.1999",
         icon: FaFacebook,
     },
-    {
-        name: "Instagram",
-        href: "https://www.instagram.com/mohammed_w_jarrad",
-        icon: FaInstagram,
-    },
+    // {
+    //     name: "Instagram",
+    //     href: "https://www.instagram.com/mohammed_w_jarrad",
+    //     icon: FaInstagram,
+    // },
     {
         name: "WhatsApp",
         href: "https://wa.me/+972568558874",
@@ -118,14 +117,14 @@ export const experiencesData = [
 ] as const;
 
 export interface Project {
-	title: string;
-	description: string;
-	image: StaticImageData;
-	tags: string[];
-	imgLink?: string;
-	mainColor: string;
-	github?: string;
-	githubBackend?: string;
+    title: string;
+    description: string;
+    image: StaticImageData;
+    tags: string[];
+    imgLink?: string;
+    mainColor: string;
+    github?: string;
+    githubBackend?: string;
 }
 
 export const projectsData: Project[] = [
@@ -143,6 +142,7 @@ export const projectsData: Project[] = [
             "Framer Motion",
             "Fabric.js",
             "i18n",
+            "Swiper",
             "Node.js",
             "Express.js",
             "PostgreSQL",
@@ -163,6 +163,7 @@ export const projectsData: Project[] = [
             "TailwindCSS",
             "Shadcn/UI",
             "Framer Motion",
+            "Swiper",
             "Node.js",
             "Express.js",
             "MongoDB",
@@ -212,27 +213,16 @@ export const projectsData: Project[] = [
         githubBackend: "https://github.com/Mohammed-Jarrad/marble-net-backend.git",
         mainColor: "#308faf",
     },
-    {
-        title: "Blogs",
-        description:
-            "Designed a MERN-based blogging platform with security features, SASS styling, React-Query state management, and Axios. Boasts Cloudinary image uploads, user engagement tools, and an integrated admin dashboard for content and user oversight.",
-        image: jarradBlogs,
-        tags: ["React.js", "Node.js", "Express.js", "MongoDB", "SASS", "React-Query"],
-        imgLink: "https://jarrad-blogs.netlify.app",
-        github: "https://github.com/Mohammed-Jarrad/Blogs-Frontend-V2.git",
-        githubBackend: "https://github.com/Mohammed-Jarrad/Blogs-Backend.git",
-        mainColor: "#d25d59",
-    },
-    {
-        title: "Social Media",
-        description:
-            "Crafted a React social media platform with SASS & swiper-js for unique stories, featuring dark mode and polished user interfaces. Highlights immersive web design using modern tools.",
-        image: jarradSocialMedia,
-        tags: ["React.js", "SASS", "Swiper.js"],
-        imgLink: "https://jarrad-socialmedia.netlify.app",
-        github: "https://github.com/Mohammed-Jarrad/social-media-app-front.git",
-        mainColor: "#5271ff",
-    },
+    // {
+    //     title: "Blogs",
+    //     description:
+    //         "Designed a MERN-based blogging platform with security features, SASS styling, React-Query state management, and Axios. Boasts Cloudinary image uploads, user engagement tools, and an integrated admin dashboard for content and user oversight.",
+    //     image: jarradBlogs,
+    //     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "SASS", "React-Query"],
+    //     github: "https://github.com/Mohammed-Jarrad/Blogs-Frontend-V2.git",
+    //     githubBackend: "https://github.com/Mohammed-Jarrad/Blogs-Backend.git",
+    //     mainColor: "#d25d59",
+    // },
     {
         title: "Nike Showcase",
         description:
@@ -252,6 +242,16 @@ export const projectsData: Project[] = [
         imgLink: "https://jarrad-delta.netlify.app",
         github: "https://github.com/Mohammed-Jarrad/react-delta-frontend.git",
         mainColor: "#071c2f",
+    },
+    {
+        title: "Social Media",
+        description:
+            "Crafted a React social media platform with SASS & swiper-js for unique stories, featuring dark mode and polished user interfaces. Highlights immersive web design using modern tools.",
+        image: jarradSocialMedia,
+        tags: ["React.js", "SASS", "Swiper.js"],
+        imgLink: "https://jarrad-socialmedia.netlify.app",
+        github: "https://github.com/Mohammed-Jarrad/social-media-app-front.git",
+        mainColor: "#5271ff",
     },
 ];
 

@@ -103,9 +103,7 @@ const Intro = () => {
             >
                 <span className="block text-lg font-comfortaa mb-5">Hello I'm</span>
                 <h1
-                    className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold
-					gradient-main font-itim
-				"
+                    className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold gradient-main"
                 >
                     Mohammed Jarrad
                 </h1>

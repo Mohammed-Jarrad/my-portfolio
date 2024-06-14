@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Rubik:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Rubik:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,7 @@ html {
 }
 
 html.dark {
-    --line-color: rgb(255, 255, 255, 0.05)
+    --line-color: rgb(255, 255, 255, 0.05);
 }
 
 .flex-center {
@@ -19,19 +19,19 @@ html.dark {
 }
 
 .gradient-violet {
-    @apply bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent
+    @apply bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent;
 }
 
 .gradient-orange {
-    @apply bg-gradient-to-r from-orange-200 to-orange-400 bg-clip-text text-transparent
+    @apply bg-gradient-to-r from-orange-200 to-orange-400 bg-clip-text text-transparent;
 }
 
 .gradient-black {
-    @apply bg-gradient-to-r  bg-clip-text text-transparent from-[#212130] to-[#39304A]
+    @apply bg-gradient-to-r  bg-clip-text text-transparent from-[#4040a8] to-[#9c7cd3];
 }
 
 .gradient-main {
-    @apply bg-gradient-to-r bg-clip-text text-transparent from-indigo-600 via-violet-500 to-purple-900 dark:from-sky-400 dark:via-teal-300 dark:to-sky-500
+    @apply bg-gradient-to-r bg-clip-text text-transparent from-indigo-600 via-violet-500 to-purple-900 dark:from-sky-400 dark:via-teal-300 dark:to-sky-500;
 }
 
 .info_button {
@@ -45,16 +45,16 @@ html.dark {
 .project_button {
     @apply focus:scale-105 hover:scale-105 outline-none transition cursor-pointer text-[14px] rounded-lg py-2 px-5 border font-comfortaa flex items-center gap-2;
 
-    >i, svg {
+    > i,
+    svg {
         font-size: 14px !important;
     }
 }
 
 .shadow-img {
     @apply shadow;
-    --tw-shadow: 4px 7px 30px -4px var(--main-color) !important
+    --tw-shadow: 4px 7px 30px -4px var(--main-color) !important;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -64,14 +64,14 @@ html.dark {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #444;
-    @apply bg-gradient-to-b from-violet-400 via-violet-500 to-violet-400
+    @apply bg-gradient-to-b from-violet-400 via-violet-500 to-violet-400;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gradient-to-b from-violet-500 via-violet-500 to-violet-500
+    @apply bg-gradient-to-b from-violet-500 via-violet-500 to-violet-500;
 }
 
 ::selection {
-    @apply bg-violet-300 text-gray-950
+    @apply bg-violet-300 text-gray-950;
 }

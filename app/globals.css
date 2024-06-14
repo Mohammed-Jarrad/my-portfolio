@@ -4,7 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 html {
     scroll-behavior: smooth !important;
     --line-color: #eae8e8e3;
@@ -43,7 +43,7 @@ html.dark {
 }
 
 .project_button {
-    @apply focus:scale-105 hover:scale-105 outline-none transition cursor-pointer text-[14px] rounded-lg py-2 px-5 border font-comfortaa flex items-center gap-2;
+    @apply  flex-1 min-w-fit focus:scale-105 hover:scale-105 outline-none transition cursor-pointer text-[14px] rounded-lg py-2 px-5 border font-comfortaa flex items-center justify-center gap-2;
 
     > i,
     svg {

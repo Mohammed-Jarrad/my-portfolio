@@ -45,15 +45,12 @@ export function Project({
 
     return (
         <motion.article
-            className="group relative rounded-lg mx-3 shadow-[0px_2px_5px_rgba(0,0,0,0.1)] overflow-hidden mb-4 md:mb-8 md:min-h-[25rem] bg-gray-50 hover:bg-gray-100 transition dark:bg-[#FFFFFF0D] dark:border-gray-600 flex items-center gap-4 lg:even:flex-row-reverse max-lg:flex-col max-lg:justify-between p-4"
+            className="group relative rounded-lg shadow-[0px_2px_5px_rgba(0,0,0,0.1)] overflow-hidden mb-4 md:mb-8 md:min-h-[25rem] bg-gray-50 hover:bg-gray-100 transition dark:bg-[#FFFFFF0D] dark:border-gray-600 flex items-center gap-4 lg:even:flex-row-reverse max-lg:flex-col max-lg:justify-between p-4"
             style={{ scale: newScale, opacity: newOpacity }}
             ref={articleRef}
         >
             {/* Content */}
-            <div
-                ref={contentRef}
-                className="flex-1 flex flex-col h-full max-md:max-w-full space-y-6"
-            >
+            <div ref={contentRef} className="flex-1 flex flex-col space-y-6">
                 {/* Title */}
                 <motion.h3
                     variants={headerVarients}
@@ -75,7 +72,7 @@ export function Project({
                     {description}
                 </motion.p>
                 {/* Tags */}
-                <ul className="flex items-center flex-wrap gap-3 mt-auto">
+                <ul className="flex items-center flex-wrap gap-2 mt-auto">
                     {[...tags].map((tag, idx) => (
                         <motion.li
                             key={tag}
@@ -95,18 +92,8 @@ export function Project({
                     initial={"hidden"}
                     animate={inView ? "visible" : "hidden"}
                     transition={{ duration: 0.5 }}
-                    className="flex items-center mt-4 gap-3"
+                    className="flex items-center flex-wrap mt-4 gap-4"
                 >
-                    {imgLink && (
-                        <Link
-                            target="_blank"
-                            href={imgLink}
-                            className="project_button text-white border-transparent shadow-lg"
-                            style={{ background: mainColor }}
-                        >
-                            <BsGlobe size={16} /> Visit
-                        </Link>
-                    )}
                     {github && (
                         <Link href={github} target="_blank" className="project_button shadow-lg">
                             <AiFillGithub size={18} />
@@ -122,11 +109,21 @@ export function Project({
                             <AiFillGithub size={18} /> Backend
                         </Link>
                     )}
+                    {imgLink && (
+                        <Link
+                            target="_blank"
+                            href={imgLink}
+                            className="project_button text-white border-transparent shadow-lg"
+                            style={{ background: mainColor }}
+                        >
+                            <BsGlobe size={16} /> Visit
+                        </Link>
+                    )}
                 </motion.div>
             </div>
             {/* Image */}
             <motion.div
-                className="flex-[1.5] size-full overflow-hidden rounded-lg"
+                className="flex-[1.5] overflow-hidden rounded-lg"
                 variants={imageVarients}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -137,7 +134,7 @@ export function Project({
                     alt={`${title} Project Image`}
                     quality={95}
                     className={`
-					size-full max-w-full object-cover rounded-lg shadow-2xl transition group-hover:scale-125
+					size-full object-cover rounded-lg shadow-2xl transition group-hover:scale-125
                     `}
                 />
             </motion.div>

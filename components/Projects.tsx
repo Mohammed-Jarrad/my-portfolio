@@ -1,16 +1,15 @@
 "use client";
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
 import React from "react";
 import { Project } from "./Project";
 import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
-    const { ref } = useSectionInView("Projects", 0.3);
+    const { ref } = useSectionInView("Projects");
 
     return (
-        <motion.section id="projects" className="scroll-mt-28" ref={ref}>
+        <section id="projects" className="scroll-mt-28" ref={ref}>
             <SectionHeader>My Projects</SectionHeader>
 
             <div className="">
@@ -18,7 +17,7 @@ const Projects = () => {
                     <Project {...project} index={i} key={project.title} />
                 ))}
             </div>
-        </motion.section>
+        </section>
     );
 };
 

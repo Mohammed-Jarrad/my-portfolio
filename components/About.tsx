@@ -13,7 +13,7 @@ const About = () => {
 	const secondP = `
     When I'm not coding, I enjoy playing video games, watching movies. I also enjoy learning new things. I am currently learning about 2D and 3D Animations.
     `
-	const { ref, inView } = useSectionInView('About', 0.2)
+	const { ref, inView } = useSectionInView('About', 0.9)
 
 	return (
 		<motion.section

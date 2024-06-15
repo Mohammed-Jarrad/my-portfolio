@@ -10,12 +10,12 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { MdDownload, MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Intro = () => {
-    const { ref: introRef } = useSectionInView("Home", 0.99);
+    const { ref: introRef } = useSectionInView("Home", 0);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     const [indicator, setIndicator] = useState<number>(0);
     const [indicator2, setIndicator2] = useState<number>(0);
     const [direction, setDirection] = useState<"forward" | "backward">("forward");
-    const infos = ["Web Developer", "Frontend Developer", "Backend Developer"] as const;
+    const infos = ["Full Stack Developer", "Frontend Developer", "Backend Developer"] as const;
     const [infoIndex, setInfoIndex] = useState(0);
     const name = useRef<string>("");
     const summary: string =

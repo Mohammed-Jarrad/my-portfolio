@@ -7,8 +7,10 @@ import { Project } from "./Project";
 import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
+    const { ref } = useSectionInView("Projects", 0.3);
+
     return (
-        <motion.section id="projects" className="scroll-mt-28">
+        <motion.section id="projects" className="scroll-mt-28" ref={ref}>
             <SectionHeader>My Projects</SectionHeader>
 
             <div className="">

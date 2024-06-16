@@ -10,7 +10,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { MdDownload, MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Intro = () => {
-    const { ref: introRef } = useSectionInView("Home", 0);
+    const { ref: introRef } = useSectionInView("Home");
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     const [indicator, setIndicator] = useState<number>(0);
     const [indicator2, setIndicator2] = useState<number>(0);
@@ -102,9 +102,7 @@ const Intro = () => {
                 animate={{ x: 0, opacity: 1, transition: { delay: 0.5, duration: 0.3 } }}
             >
                 <span className="block text-lg font-comfortaa mb-5">Hello I'm</span>
-                <h1
-                    className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold gradient-main"
-                >
+                <h1 className="text-5xl max-sm:text-2xl uppercase tracking-tighter font-bold gradient-main">
                     Mohammed Jarrad
                 </h1>
             </motion.div>

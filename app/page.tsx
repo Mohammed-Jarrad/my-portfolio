@@ -12,7 +12,7 @@ import { Toaster } from "react-hot-toast";
 
 export default function Home() {
     return (
-        <main className="flex-col flex-center w-full sm:max-w-screen-lg px-3 sm:px-1 mx-auto">
+        <main className="flex-col flex-center w-full sm:max-w-screen-lg px-3 sm:px-1 mx-auto overflow-x-hidden">
             <Toaster position="bottom-left" />
             <ScrollToTop />
             <ScrollIndicator />

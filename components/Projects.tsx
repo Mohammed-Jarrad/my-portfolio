@@ -6,7 +6,7 @@ import { Project } from "./Project";
 import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
-    const { ref } = useSectionInView("Projects");
+    const { ref } = useSectionInView("Projects", 0.1);
 
     return (
         <section id="projects" className="scroll-mt-28" ref={ref}>

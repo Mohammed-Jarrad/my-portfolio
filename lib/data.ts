@@ -51,12 +51,12 @@ export const socialMedia = [
     },
     {
         name: "Facebook",
-        href: "https://www.facebook.com/jarrad.1999",
+        href: "https://www.facebook.com/mohammed.w.jarrad",
         icon: FaFacebook,
     },
     // {
     //     name: "Instagram",
-    //     href: "https://www.instagram.com/mohammed_w_jarrad",
+    //     href: "https://www.instagram.com/mohammed.w.jarrad",
     //     icon: FaInstagram,
     // },
     {

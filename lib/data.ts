@@ -78,7 +78,7 @@ export const personalDetails = {
         icon: React.createElement(FaGithub),
     },
     cv: {
-        location: "/Mohammed Jarrad Resume.pdf",
+        location: "/Mohammed Jarrad-CV.pdf",
     },
     personalImg: {
         src: "/pimage1.png",
